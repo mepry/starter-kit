@@ -1,0 +1,27 @@
+{
+  "name": "@repo/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@repo/db": "*",
+    "@repo/validators": "*",
+    "sanitize-html": "^2.18.0",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "@repo/config": "*",
+    "@types/node": "^24.0.0",
+    "@types/sanitize-html": "^2.16.0",
+    "eslint": "^9.39.0",
+    "vitest": "^5.0.4"
+  }
+}
